@@ -20,11 +20,11 @@ This is a machine learning project I built to predict whether a flight will be c
 * This forced the model to strictly predict the future based on the past, making the benchmark realistic and much tougher.
 * During this phase, I discovered that ROC-AUC requires raw probability outputs .predict_proba() rather than binary predictions .predict() to calculate risk rankings accurately. Leveraging this insight boosted our benchmark score to 0.58.
 
-### Phase 4: LightGBM 
+### Phase 3: LightGBM 
 * Transferred the pipeline over to LightGBM.
 * The raw tree model initially showed almost no performance increase.
 
-### Phase 5: Bayesian Optimization Search
+### Phase 4: Bayesian Optimization Search
 * I deployed a BayesSearchCV loop across 25 iterations to tune key tree parameters: Alpha, Lambda, learning_rate, max_depth and more.
 * Running initial optimization allowed the trees to jump to 0.685.
 * I increased the parameters range by tuning it even more as some parameters such as alpha and lambda had maxed out.
