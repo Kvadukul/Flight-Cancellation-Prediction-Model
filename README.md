@@ -30,7 +30,7 @@ This is a machine learning project I built to predict whether a flight will be c
 * I increased the parameters range by tuning it even more as some parameters such as alpha and lambda had maxed out.
 
 
-## 📊 Final Performance Results
+##  Final Performance Results
 
 * [[15785  3805]      # 15785 flights predicted as on time, 3805 flights predicted as risk but flew.
 * [  214   196]]     # 196 flights caught as cancelled, 214 flights missed. (ended up getting cancelled by model didnt catch it)
